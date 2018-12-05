@@ -1,0 +1,134 @@
+@font-face {
+ font-family: "Roboto";
+ src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+.MainGroup {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  justify-content: space-around;
+  width: 100vmin;
+  height: 100vmin;
+  animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.MainGroup-About_wrapper {
+  display: flex;
+  align-items: center;
+  min-width: 52vmin;
+  max-height: 30vmin;
+  justify-content: space-around;
+  flex-flow: row-reverse;
+  background-color: rgba(125, 120, 255, 1);
+  border-radius: 1vmin;
+}
+.MainGroup-Initials_wrapper {
+	display: flex;
+	flex-flow: column;
+	align-self: center;
+  justify-content: space-around;
+  margin: 1vmin 1vmin;
+	min-width: 35vmin;
+  max-height: 25vmin;
+}
+.AboutGroup-Logos_wrapper {
+  display: flex;
+  min-width: 15vmin;
+  max-height: 10vmin;
+  margin: 1vmin 0;
+  flex-flow: row;
+}
+.AboutGroup-LogoFacebook {
+  background-image: url('fb.png');
+}
+.AboutGroup-LogoVk {
+  background-image: url('vk.png');
+}
+.AboutGroup-LogoGitHub {
+  background-image: url('gh.png');
+}
+.AboutWrapper-Photo_wrapper {
+  display: flex;
+  margin: 1vmin 1vmin;
+  width: 15vmin;
+  height: 15vmin;
+  align-self: center;
+  border-radius: 50px;
+  background-color: rgba(200, 120, 255, 0.8);
+  background-size: cover;
+  background-image: url("me.png");
+  background-repeat: no-repeat;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+h1, p {
+	margin: 0 1vmin;
+	color: rgba(255, 255, 255, 1);
+  cursor: default;
+}
+p {
+  font-weight: 500;
+  font-size: 2vmin;
+}
+h1 {
+	font-size: 5vmin;
+}
+a {
+  display: flex;
+  width: 5vmin;
+  height: 5vmin;
+  margin: 0 1vmin;
+  filter: blur(1px);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.MainGroup-PickerWheel_wrapper {
+  display: flex;
+  max-width: 17vmin;
+  min-height: 15vmin;
+  justify-content: space-around;
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1px solid rgba(255, 255, 255, 1);
+}
+.MainGroup-PickerWheel {
+  display: flex;
+  max-width: 15vmin;
+  max-height: 13vmin;
+  margin: 1vmin 5vmin;
+  justify-content: space-around;
+  flex-flow: column;
+  align-self: center;
+  align-items: center;
+  border-top-left-radius: 2vmin;
+  border-bottom-right-radius: 2vmin;
+  border-bottom-left-radius: 2vmin;
+  background-color: rgba(125, 120, 255, 1);
+}
+.MainGroup-PickerWheel_first, .MainGroup-PickerWheel_second, .MainGroup-PickerWheel_third {
+  display: flex;
+  height: 5vmin;
+  min-width: 15vmin;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 2vmin;
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  cursor: pointer;
+  border-radius: 1vmin;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.MainGroup-PickerWheel_first:hover, .MainGroup-PickerWheel_second:hover, .MainGroup-PickerWheel_third:hover {
+  background-color: rgba(50, 30, 220, 0.8);
+  opacity: 0.5;
+}
+@keyframes color {
+  0% {
+    background-color: rgba(71, 41, 254, 0.8);
+  }
+  50% {
+    background-color: rgba(50, 30, 220, 0.8);
+  }
+  100% {
+    background-color: rgba(71, 41, 254, 0.8);
+  }
+}
