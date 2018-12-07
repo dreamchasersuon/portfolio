@@ -1,25 +1,25 @@
 .Maingroup-SkillsSection {
   display: flex;
-  flex-flow: row wrap;
-  max-width: 25vmin;
+  flex-flow: row;
+  min-width: 25vmin;
   max-height: 20vmin;
 }
 .Maingroup-HackSection {
   display: none;
   flex-flow: row wrap;
-  max-width: 25vmin;
+  min-width: 25vmin;
   max-height: 20vmin;
 }
 .Maingroup-AboutSection {
   display: none;
   flex-flow: row wrap;
-  max-width: 25vmin;
+  min-width: 25vmin;
   max-height: 20vmin;
 }
-.Skills-ProgressBar_first_wrapper, .Skills-ProgressBar_second_wrapper, .Skills-ProgressBar_third_wrapper {
+.Skills-ProgressBar {
   display: flex;
   max-width: 25vmin;
-  max-height: 4vmin;
+  min-height: 4vmin;
   border-radius: 30px;
   margin: 1vmin 2vmin;
   align-self: center;
@@ -37,7 +37,7 @@
   background-color: rgba(125, 120, 255, 0.8);
   transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.ButtonSlider_first, .ButtonSlider_second, .ButtonSlider_third {
+.ButtonSlider {
   color: rgba(240, 240, 240, 0.5);
   border-radius: 50px;
   align-self: flex-start;
@@ -63,9 +63,10 @@
   background-color: rgba(220, 220, 255, 1);
   transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 button:focus {outline:0;}
 
-h2 {
+p {
     margin-right: 1vmin;
     font-weight: 400;
     font-size: 2vmin;

@@ -9,7 +9,7 @@
   font-family: Roboto, sans-serif;
   font-weight: 300;
   justify-content: space-around;
-  width: 100vmin;
+  min-width: 100vmin;
   height: 100vmin;
   animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -88,7 +88,6 @@ a {
   min-height: 15vmin;
   justify-content: space-around;
   border-left: 1px solid rgba(255, 255, 255, 1);
-  border-right: 1px solid rgba(255, 255, 255, 1);
 }
 .MainGroup-PickerWheel {
   display: flex;

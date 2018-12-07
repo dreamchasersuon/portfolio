@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Main.css';
-import Aside from './Aside.js';
 
 class Main extends Component {
   WheelClickFirst = () => {
@@ -43,7 +42,6 @@ class Main extends Component {
     return (
       <main class="MainGroup">
         <div class="MainGroup-About_wrapper">
-        <Aside />
         <div class="MainGroup-PickerWheel_wrapper">
           <div class="MainGroup-PickerWheel">
             <div onClick={this.WheelClickFirst} class="MainGroup-PickerWheel_first">Soft skills</div>
