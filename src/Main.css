@@ -1,12 +1,10 @@
-@font-face {
- font-family: "Roboto";
- src: url('https://fonts.googleapis.com/css?family=Roboto');
+html {
+  font-family: Roboto, sans-serif;
 }
 .MainGroup {
   display: flex;
   align-items: center;
   flex-flow: column;
-  font-family: Roboto, sans-serif;
   font-weight: 300;
   justify-content: center;
   min-width: 100vmin;
@@ -21,6 +19,7 @@
   padding: 1vmin;
   margin: 1vmin;
   border-radius: 1vmin;
+  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 }
 .MainGroup-About_wrapper {
   display: flex;
@@ -71,85 +70,26 @@
   background-repeat: no-repeat;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-h1, p {
-	margin: 0 1vmin;
+.MainGroup-Header, .MainGroup-Paragraph {
+  margin: 0 1vmin;
 	color: rgba(255, 255, 255, 1);
   cursor: default;
+  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 }
-p {
+.MainGroup-Paragraph {
   font-weight: 500;
   font-size: 2vmin;
 }
-h1 {
+.MainGroup-Header {
 	font-size: 5vmin;
 }
-a {
+.SocialLink {
   display: flex;
   width: 5vmin;
   height: 5vmin;
   margin: 0 1vmin;
-  filter: blur(1px);
   background-repeat: no-repeat;
   background-size: contain;
-}
-.MainGroup-PickerWheel_wrapper {
-  display: flex;
-  max-width: 17vmin;
-  min-height: 15vmin;
-  justify-content: space-around;
-  border-left: 1px solid rgba(255, 255, 255, 1);
-}
-.MainGroup-PickerWheel {
-  display: flex;
-  max-width: 15vmin;
-  max-height: 13vmin;
-  margin: 1vmin 5vmin;
-  justify-content: space-around;
-  flex-flow: column;
-  align-self: center;
-  align-items: center;
-  border-top-left-radius: 2vmin;
-  border-bottom-right-radius: 2vmin;
-  border-bottom-left-radius: 2vmin;
-  background-color: rgba(125, 120, 255, 1);
-}
-.PickerWheel {
-  display: flex;
-  height: 5vmin;
-  min-width: 15vmin;
-  justify-content: space-around;
-  font-weight: 500;
-  font-size: 2vmin;
-  color: rgba(255, 255, 255, 1);
-  align-items: center;
-  cursor: pointer;
-  border-radius: 1vmin;
-  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-button {
-    background: none;
-    border: 0;
-    color: inherit;
-    /* cursor: default; */
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    -webkit-appearance: button; /* for input */
-    -webkit-user-select: none; /* for button */
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
-
-.PickerWheel:hover {
-  background-color: rgba(50, 30, 220, 0.8);
-  opacity: 0.5;
-}
-
-.PickerWheel_active {
-  background-color: rgba(50, 30, 220, 0.8);
-  opacity: 0.5;
 }
 
 @keyframes color {

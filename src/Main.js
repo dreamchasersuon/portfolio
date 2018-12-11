@@ -7,12 +7,12 @@ class Main extends Component {
       <main className="MainGroup">
         <article className="MainGroup-About_wrapper">
           <section className="MainGroup-Initials_wrapper">
-            <h1>Tim Zdornov</h1>
-            <p>Front-end developer</p>
+            <h1 className="MainGroup-Header">Tim Zdornov</h1>
+            <p className="MainGroup-Paragraph">Front-end developer</p>
             <div className="AboutGroup-Logos_wrapper">
-              <a href="https://vk.com/lighttimfire" target="_blank" rel="noopener noreferrer" className="AboutGroup-LogoVk"></a>
-              <a href="https://github.com/dreamchasersuon" target="_blank" rel="noopener noreferrer" className="AboutGroup-LogoGitHub"></a>
-              <a href="https://www.facebook.com/formulatim" target="_blank" rel="noopener noreferrer" className="AboutGroup-LogoFacebook"></a>
+              <a href="https://vk.com/lighttimfire" target="_blank" rel="noopener noreferrer" className="AboutGroup-LogoVk SocialLink"></a>
+              <a href="https://github.com/dreamchasersuon" target="_blank" rel="noopener noreferrer" className="AboutGroup-LogoGitHub SocialLink"></a>
+              <a href="https://www.facebook.com/formulatim" target="_blank" rel="noopener noreferrer" className="AboutGroup-LogoFacebook SocialLink"></a>
             </div>
           </section>
           <div className="AboutWrapper-Photo_wrapper">

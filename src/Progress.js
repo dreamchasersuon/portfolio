@@ -6,9 +6,9 @@ class SkillSection extends Component {
       <article className="Personal-Specials">
         <h2 className="BlockHeader">About</h2>
           <section className="SpecialsBlock">
-            <div className="SpecialsWrapper">
+            <div className="SpecialsWrapper" id="st-panel-1">
             <h2 className="SliderHeader">Personal</h2>
-              <SpecialLearn title="Learnability" />
+              <SpecialLearn title="Learnability"/>
               <SpecialRespons percent="90%" title="Responsibility" />
               <SpecialLead percent="79%" title="Leadership" />
               <SpecialLogic percent="75%" title="Logic" />
@@ -17,7 +17,7 @@ class SkillSection extends Component {
               <SpecialTenacity percent="97%" title="Tenacity" />
               <SpecialStress percent="91%" title="Stress resistance" />
             </div>
-            <div className="SpecialsWrapper">
+          <div className="SpecialsWrapper" id="st-panel-2">
             <h2 className="SliderHeader">Hacking</h2>
               <SpecialJS percent="64%" title="JS" />
               <SpecialCSS percent="67%" title="CSS" />
@@ -29,6 +29,10 @@ class SkillSection extends Component {
               <SpecialCLI percent="21%" title="CLI" />
               </div>
             </section>
+            <nav className="ScrollNavigation">    
+                <a className="NavLink Up" href="#st-panel-1">Up</a>
+                <a className="NavLink Down" href="#st-panel-2">Down</a>
+            </nav>
       </article>
     )
   }
