@@ -1,6 +1,9 @@
-html {
-  font-family: Roboto, sans-serif;
+@font-face {
+	font-family: 'Lato', 'Roboto';
+	src: url(fonts/Roboto-Regular.ttf) format("ttf"),
+       url(fonts/Lato-Regular.ttf) format("ttf");
 }
+* { font-family: 'Roboto', sans-serif; }
 .MainGroup {
   display: flex;
   align-items: center;
@@ -19,7 +22,12 @@ html {
   padding: 1vmin;
   margin: 1vmin;
   border-radius: 1vmin;
+  box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
   text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.AboutSelf:hover {
+  text-shadow: none;
 }
 .MainGroup-About_wrapper {
   display: flex;
@@ -29,6 +37,7 @@ html {
   max-height: 30vmin;
   justify-content: space-around;
   flex-flow: row-reverse;
+  box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
   background-color: rgba(125, 120, 255, 1);
   border-radius: 1vmin;
 }
@@ -57,6 +66,10 @@ html {
 .AboutGroup-LogoGitHub {
   background-image: url('gh.svg');
 }
+.SocialLink:hover {
+  transform: scale(1.02);
+  opacity: 0.5;
+}
 .AboutWrapper-Photo_wrapper {
   display: flex;
   margin: 1vmin 1vmin;
@@ -75,6 +88,7 @@ html {
 	color: rgba(255, 255, 255, 1);
   cursor: default;
   text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .MainGroup-Paragraph {
   font-weight: 500;
@@ -83,6 +97,9 @@ html {
 .MainGroup-Header {
 	font-size: 5vmin;
 }
+.MainGroup-Header:hover, .MainGroup-Paragraph:hover {
+  text-shadow: none;
+}
 .SocialLink {
   display: flex;
   width: 5vmin;
@@ -90,6 +107,7 @@ html {
   margin: 0 1vmin;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 @keyframes color {
@@ -102,4 +120,63 @@ html {
   100% {
     background-color: rgba(71, 41, 254, 0.8);
   }
+}
+@media screen and (max-width: 568px) {
+  body {
+    font-family: Lato, sans-serif;
+  }
+  .MainGroup {
+    justify-content: space-between;
+    flex-flow: column-reverse;
+  }
+  .MainGroup-About_wrapper {
+    min-width: 100vmin;
+    min-height: 30vmin;
+    border-top-right-radius: 4vmin;
+    border-top-left-radius: 4vmin;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .MainGroup-Header {
+    font-size: 5vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .MainGroup-Paragraph {
+    font-size: 3vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .MainGroup-Initials_wrapper {
+    min-width: 70vmin;
+  }
+  .AboutGroup-Logos_wrapper {
+    min-width: 30vmin;
+    align-self: flex-end;
+  }
+  .AboutWrapper-Photo_wrapper {
+    min-width: 25vmin;
+    min-height: 25vmin;
+  }
+  .AboutSelf {
+    min-width: 50vmin;
+    min-height: 20vmin;
+    padding: 3vmin;
+    align-self: flex-end;
+    text-shadow: none;
+    border-radius: 4vmin;
+    border: 1px solid rgba(71, 41, 220, 0.8);
+    letter-spacing: 1px;
+  }
+  .AboutSelf:hover {
+    box-shadow: none;
+  }
+  .SocialLink {
+    width: 8vmin;
+    height: 8vmin;
+    box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
+    border-radius: 50vmin;
+  }
+
+
 }

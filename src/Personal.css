@@ -13,14 +13,12 @@
 }
 .SpecialsWrapper {
   display: flex;
-  position: relative;
   flex-flow: row wrap;
-  flex-grow: 1;
   max-width: 60vmin;
   max-height:80vmin;
   margin-bottom: 10vmin;
   align-self: center;
-  padding: 2vmin;
+  padding: 10vmin;
   align-items: center;
 }
 .SpecialsBlock {
@@ -36,16 +34,17 @@
   overflow: scroll;
 }
 .BlockHeader {
-  color: rgba(255, 255, 255, 1);
   display: flex;
   min-height: 7vmin;
   max-height: 10vmin;
-  flex-flow: nowrap;
-  align-items: center;
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(71, 41, 254, 0.8);
   animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-size: 6vh;
   text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+}
+.BlockHeader:hover {
+  text-shadow: none;
 }
 .SliderHeader {
   display: flex;
@@ -55,11 +54,14 @@
   background-color: rgba(71, 41, 254, 0.8);
   font-size: 4vh;
   text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.SliderHeader:hover {
+  text-shadow: none;
 }
 .Specials-Skill {
   display: flex;
   align-items: center;
-  align-content: stretch;
   width: 25vmin;
   flex-grow: 1;
   max-height: 15vmin;
@@ -73,6 +75,7 @@
 .Specials-Skill:hover {
   transform: scale(1.1);
   background-color: rgba(100, 100, 254, 0.8);
+  text-shadow: none;
 }
 .Spinner {
   display: flex;
@@ -122,4 +125,51 @@ input {
 
 .NavLink:hover {
 	background-color: rgba(180, 200, 250, 0.5);
+}
+
+@media screen and (max-width: 568px) {
+  .Personal-Specials {
+    height: auto;
+  }
+  .BlockHeader {
+    text-shadow: none;
+    padding: 1vmin 0;
+  }
+  .SliderHeader {
+    text-shadow: none;
+    font-size: 5vh;
+  }
+  .SpecialsBlock {
+    min-width: 100vmin;
+    min-height: 100vmin;
+    align-items: center;
+    overflow: scroll;
+    justify-content: space-between;
+    height: auto;
+  }
+  .SpecialsWrapper {
+    align-self: center;
+    min-width: 80vmin;
+    min-height: 100vmin;
+    box-sizing: content-box;
+    overflow: scroll;
+  }
+  .Specials-Skill {
+    width: auto;
+    padding-right: 2vmin;
+    max-height: 30vmin;
+  }
+
+  .NavLink {
+    min-width: 15vmin;
+    min-height: 8vmin;
+    border-top-right-radius: 2vmin;
+    border-top-left-radius: 2vmin;
+  }
+  .Up {
+    right: 45vmin;
+  }
+  .Down {
+    right: 35vmin;
+  }
 }

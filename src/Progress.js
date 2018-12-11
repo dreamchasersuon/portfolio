@@ -7,29 +7,29 @@ class SkillSection extends Component {
         <h2 className="BlockHeader">About</h2>
           <section className="SpecialsBlock">
             <div className="SpecialsWrapper" id="st-panel-1">
-            <h2 className="SliderHeader">Personal</h2>
-              <SpecialLearn title="Learnability"/>
-              <SpecialRespons percent="90%" title="Responsibility" />
-              <SpecialLead percent="79%" title="Leadership" />
-              <SpecialLogic percent="75%" title="Logic" />
-              <SpecialAbstract percent="82%" title="Abstract thinking" />
-              <SpecialPlan percent="80%" title="Planning" />
-              <SpecialTenacity percent="97%" title="Tenacity" />
-              <SpecialStress percent="91%" title="Stress resistance" />
+              <h2 className="SliderHeader">Personal</h2>
+                <SpecialLearn title="Learnability"/>
+                  <SpecialRespons percent="90%" title="Responsibility" />
+                    <SpecialLead percent="79%" title="Leadership" />
+                      <SpecialLogic percent="75%" title="Logic" />
+                        <SpecialAbstract percent="82%" title="Abstract thinking" />
+                      <SpecialPlan percent="80%" title="Planning" />
+                    <SpecialTenacity percent="97%" title="Tenacity" />
+                <SpecialStress percent="91%" title="Stress resistance" />
             </div>
           <div className="SpecialsWrapper" id="st-panel-2">
             <h2 className="SliderHeader">Hacking</h2>
-              <SpecialJS percent="64%" title="JS" />
-              <SpecialCSS percent="67%" title="CSS" />
-              <SpecialHTML percent="89%" title="HTML" />
-              <SpecialGit percent="25%" title="Git" />
-              <SpecialReact percent="15%" title="React" />
-              <SpecialWebpack percent="25%" title="Webpack" />
-              <SpecialDevTools percent="69%" title="DevTools" />
+                <SpecialJS percent="64%" title="JS" />
+                  <SpecialCSS percent="67%" title="CSS" />
+                    <SpecialHTML percent="89%" title="HTML" />
+                      <SpecialGit percent="25%" title="Git" />
+                    <SpecialReact percent="15%" title="React" />
+                  <SpecialWebpack percent="25%" title="Webpack" />
+                <SpecialDevTools percent="69%" title="DevTools" />
               <SpecialCLI percent="21%" title="CLI" />
-              </div>
-            </section>
-            <nav className="ScrollNavigation">    
+            </div>
+          </section>ß
+            <nav className="ScrollNavigation">
                 <a className="NavLink Up" href="#st-panel-1">Up</a>
                 <a className="NavLink Down" href="#st-panel-2">Down</a>
             </nav>
