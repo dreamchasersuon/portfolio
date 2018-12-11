@@ -50,13 +50,13 @@
   flex-flow: row;
 }
 .AboutGroup-LogoFacebook {
-  background-image: url('fb.png');
+  background-image: url('fb.svg');
 }
 .AboutGroup-LogoVk {
-  background-image: url('vk.png');
+  background-image: url('vk.svg');
 }
 .AboutGroup-LogoGitHub {
-  background-image: url('gh.png');
+  background-image: url('gh.svg');
 }
 .AboutWrapper-Photo_wrapper {
   display: flex;
