@@ -5,17 +5,27 @@
 .MainGroup {
   display: flex;
   align-items: center;
-  flex-flow: row;
+  flex-flow: column;
   font-family: Roboto, sans-serif;
   font-weight: 300;
-  justify-content: space-around;
+  justify-content: center;
   min-width: 100vmin;
   height: 100vmin;
   animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
+.AboutSelf {
+  display: flex;
+  background-color: rgba(125, 120, 255, 1);
+  max-width: 52vmin;
+  color: rgba(255, 255, 255, 1);
+  padding: 1vmin;
+  margin: 1vmin;
+  border-radius: 1vmin;
+}
 .MainGroup-About_wrapper {
   display: flex;
   align-items: center;
+  align-self: center;
   min-width: 52vmin;
   max-height: 30vmin;
   justify-content: space-around;
@@ -103,7 +113,7 @@ a {
   border-bottom-left-radius: 2vmin;
   background-color: rgba(125, 120, 255, 1);
 }
-.MainGroup-PickerWheel_first, .MainGroup-PickerWheel_second, .MainGroup-PickerWheel_third {
+.PickerWheel {
   display: flex;
   height: 5vmin;
   min-width: 15vmin;
@@ -116,10 +126,32 @@ a {
   border-radius: 1vmin;
   transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.MainGroup-PickerWheel_first:hover, .MainGroup-PickerWheel_second:hover, .MainGroup-PickerWheel_third:hover {
+
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.PickerWheel:hover {
   background-color: rgba(50, 30, 220, 0.8);
   opacity: 0.5;
 }
+
+.PickerWheel_active {
+  background-color: rgba(50, 30, 220, 0.8);
+  opacity: 0.5;
+}
+
 @keyframes color {
   0% {
     background-color: rgba(71, 41, 254, 0.8);

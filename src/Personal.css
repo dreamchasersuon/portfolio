@@ -1,40 +1,53 @@
 .About-MainGroup {
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-flow: row-reverse;
-  max-height: 100vmin;
   flex-grow: 1;
-  min-width: 90vmin;
-}
-.Personal-Hack {
-  display: none;
-  flex-flow: column;
 }
 .Personal-Specials {
   display: flex;
+  align-self: flex-end;
+  justify-content: space-evenly;
   flex-flow: column;
+  width: 100%;
+  height: 100vmin;
+}
+.SpecialsWrapper {
+  display: flex;
+  flex-flow: row wrap;
   flex-grow: 1;
+  max-width: 60vmin;
+  max-height:80vmin;
+  margin-bottom: 10vmin;
+  align-self: center;
+  padding: 2vmin;
+  align-items: center;
+  overflow: hidden;
 }
 .SpecialsBlock {
   display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  max-width: 60vmin;
   align-self: center;
-  align-items: center;
+  flex-flow: row wrap;
+  overflow-x: scroll;
+  min-width: 60vmin;
+  max-width: 70vmin;
 }
-h2 {
+.BlockHeader {
   color: rgba(255, 255, 255, 1);
   display: flex;
-  height: 10vmin;
+  min-height: 7vmin;
+  max-height: 10vmin;
   flex-flow: nowrap;
   align-items: center;
-  width: 100%;
-  align-self: stretch;
   background-color: rgba(71, 41, 254, 0.8);
   animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-size: 6vh;
+}
+.SliderHeader {
+  display: flex;
+  max-height: 10vmin;
+  min-width: 60vmin;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(71, 41, 254, 0.8);
+  font-size: 4vh;
 }
 .Specials-Skill {
   display: flex;
@@ -45,29 +58,22 @@ h2 {
   max-height: 15vmin;
   margin: 1vmin 1vmin;
   border-radius: 2vmin;
-  background-color: rgba(205, 200, 255, 1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  background-color: rgba(71, 41, 254, 0.8);
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.Specials-Skill:hover {
+  transform: scale(1.1);
+  background-color: rgba(100, 100, 254, 0.8);
 }
 .Spinner {
   display: flex;
   align-items: center;
+  color: rgba(255, 255, 255, 1);
   margin: 1vmin 1vmin;
 }
-svg {
-  height: 10vmin;
-  width: 10vmin;
-}
-.progress-bar__background {
-  fill: none;
-  stroke: #e2eff0;
-  stroke-width: 0.3vmin;
-}
-.progress-bar__progress {
-  fill: none;
-  stroke: #e2eff0;
-  stroke: #78bec7;
-  stroke-dasharray: 100 100;
-  stroke-dashoffset: 100;
-  stroke-linecap: round;
-  stroke-width: 2px;
-  transition: stroke-dashoffset 1s ease-in-out;
+circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
 }
