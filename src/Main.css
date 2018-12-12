@@ -22,11 +22,8 @@
   padding: 2vmin;
   margin: 1vmin;
   border-radius: 1vmin;
-  text-indent: 1vmin;
-  text-justify: kashida;
   line-height: 3vmin;
-  word-spacing: 1px;
-  text-align: justify;
+  text-align: left;
   box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 }
 .ProfileModalWindow {
@@ -132,6 +129,42 @@
     background-color: rgba(71, 41, 254, 0.8);
   }
 }
+@media screen and (max-width: 1168px) {
+  .InfoPanelBlock {
+    min-width: 100%;
+  }
+  .ProfileModalWindow {
+    min-width: 70vmin;
+    min-height: 30vmin;
+  }
+  .UsersInitials {
+    font-size: 6vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .UsersJob {
+    font-size: 2.5vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .UserDataBlock {
+    min-width: 30vmin;
+  }
+  .UsersSocialLinks {
+    min-width: 20vmin;
+    align-self: flex-end;
+  }
+  .UsersAvatar {
+    min-width: 18vmin;
+    min-height: 18vmin;
+  }
+  .SocialLink {
+    width: 7vmin;
+    height: 7vmin;
+    box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
+    border-radius: 50vmin;
+  }
+}
 @media screen and (max-width: 568px) {
   body {
     font-family: Lato, sans-serif;
@@ -177,7 +210,8 @@
     text-shadow: none;
     border-radius: 4vmin;
     border: 1px solid rgba(71, 41, 220, 0.8);
-    letter-spacing: 1px;
+    line-height: 5vmin;
+    word-spacing: 0;
   }
   .SocialLink {
     width: 8vmin;

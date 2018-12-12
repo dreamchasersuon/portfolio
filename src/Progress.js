@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-
+const data = {
+  1: "53%", 2: "Learn"
+}
+const tifOptions = Object.keys(data).map(key =>
+    <option key={key} value={key}></option>
+)
 class SkillSection extends Component {
   render() {
     return (
@@ -8,25 +13,25 @@ class SkillSection extends Component {
           <section className="UsersSpecialsSection">
           <h2 className="SpecialSectionHeader">Personal</h2>
             <div className="UsersSpecialsSection_wrapper">
-                <SpecialLearn title="Learnability"/>
-                  <SpecialRespons percent="90%" title="Responsibility" />
-                    <SpecialLead percent="79%" title="Leadership" />
-                      <SpecialLogic percent="75%" title="Logic" />
-                        <SpecialAbstract percent="82%" title="Abstract thinking" />
-                      <SpecialPlan percent="80%" title="Planning" />
-                    <SpecialTenacity percent="97%" title="Tenacity" />
-                <SpecialStress percent="91%" title="Stress resistance" />
+                <SpecialLearn  title="Learnability"/>
+                  <SpecialRespons title="Responsibility" />
+                    <SpecialLead title="Leadership" />
+                      <SpecialLogic title="Logic" />
+                        <SpecialAbstract title="Abstract thinking" />
+                      <SpecialPlan title="Planning" />
+                    <SpecialTenacity title="Tenacity" />
+                <SpecialStress title="Stress resistance" />
             </div>
           <h2 className="SpecialSectionHeader">Hacking</h2>
           <div className="UsersSpecialsSection_wrapper">
-                <SpecialJS percent="64%" title="JS" />
-                  <SpecialCSS percent="67%" title="CSS" />
-                    <SpecialHTML percent="89%" title="HTML" />
-                      <SpecialGit percent="25%" title="Git" />
-                    <SpecialReact percent="15%" title="React" />
-                  <SpecialWebpack percent="25%" title="Webpack" />
-                <SpecialDevTools percent="69%" title="DevTools" />
-              <SpecialCLI percent="21%" title="CLI" />
+                <SpecialJS  title="JS" />
+                  <SpecialCSS  title="CSS" />
+                    <SpecialHTML  title="HTML" />
+                      <SpecialGit  title="Git" />
+                    <SpecialReact  title="React" />
+                  <SpecialWebpack  title="Webpack" />
+                <SpecialDevTools  title="DevTools" />
+              <SpecialCLI  title="CLI" />
             </div>
           </section>
       </article>
@@ -222,7 +227,7 @@ class ProgressLearnability extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount(props) {
     // emulating progress
     const interval = setInterval(() => {
       this.setState({ progress: this.state.progress + 95 });
@@ -231,13 +236,13 @@ class ProgressLearnability extends React.Component {
     }, 1000);
   }
 
-  render() {
+  render(props) {
     return (
       <ProgressSVG
         radius={ 40 }
         stroke={ 2.5 }
         progress={ this.state.progress }
-        percent="95%"
+        percent={this.props.percent}
       />
     );
   }
