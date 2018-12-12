@@ -3,7 +3,7 @@ const dataPercents = ["53", "53%", "53%", "53%", "53%", "53%", "53%", "53%", "53
               "53%","53%","53%",  "53%","53%",  "53%", "53"]
 
 const dataTitles = ["53", "53%", "53%", "53%", "53%", "53%", "53%", "53%", "53%", "53%",
-              "53%","53%","53%",  "53%","53%",  "53%", "53"]
+              "53%","53%","53%",  "53%","53%",  "5s%", "ls"]
 
 class ProgressSVG extends React.Component {
   constructor(props) {
@@ -48,16 +48,19 @@ class ProgressLearnability extends React.Component {
     this.state = {
       progress: 0,
       percent: '',
+      title: ''
     };
   }
 
   componentDidMount(props) {
-    let d = dataTitles,
+    let t = dataTitles,
         p = dataPercents;
     const interval = setInterval(() => {
       this.setState(
-        { progress: this.state.progress + data['1'] });
-      if (this.state.progress === data['1'])
+        { progress: this.state.progress + p.pop(),
+          percent: this.state.progress + "%",
+          title: this.state.title + t.pop()});
+      if (this.state.progress === p.pop())
         clearInterval(interval);
     }, 1000);
   }
@@ -70,10 +73,10 @@ class ProgressLearnability extends React.Component {
             radius={ 40 }
             stroke={ 2.5 }
             progress={ this.state.progress }
-            percent={ data['1'] }
+            percent={ this.state.percent }
             />
           </div>
-        <p>{ title }</p>
+        <p>{ this.state.title }</p>
       </div>
     );
   }
