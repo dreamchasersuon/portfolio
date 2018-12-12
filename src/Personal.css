@@ -5,10 +5,12 @@
 .UsersStatsBlock_wrapper {
   display: flex;
   flex-flow: column;
+  flex-grow: 1;
   color: rgba(255, 255, 255, 1);
-  width: 100%;
+  min-width: 93vmin;
   height: 100vmin;
 }
+
 .UsersSpecialsSection_wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -22,24 +24,33 @@
   display: flex;
   align-self: center;
   flex-flow: row wrap;
-  overflow: hidden;
   min-width: 60vmin;
   max-width: 70vmin;
   max-height: 100%;
+  overflow: hidden;
+  -webkit-animation-duration:3s;
+  animation-duration:3s;
+  -webkit-animation-name:slide;
+  animation-name:slide;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.UsersStatsBlock_wrapper:hover {
+.UsersSpecialsSection:hover {
   overflow: scroll;
 }
 .StatsBlockHeader {
   display: flex;
+  min-width: 100%;
   font-weight: 300;
   min-height: 7vmin;
   max-height: 10vmin;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(71, 41, 254, 0.8);
   font-size: 6vh;
+  border-top-right-radius: 10vmin;
+  border-bottom-right-radius: 10vmin;
 }
 .SpecialSectionHeader {
+  display: flex;
   max-height: 10vmin;
   min-width: 70vmin;
   margin-top: 1vmin;
@@ -60,7 +71,6 @@
   border-radius: 2vmin;
   box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
   background-color: rgba(71, 41, 254, 0.8);
-  text-shadow: 0 0 1px rgba(151,24,64,0.2);
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .Specials-Skill:hover {
@@ -79,7 +89,15 @@ circle {
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 }
-
+@-webkit-keyframes slide
+{
+	from {
+	  width: 0%;
+  }
+	to {
+	  width:100%;
+  }
+}
 @media screen and (max-width: 568px) {
   .UsersStatsBlock {
       background-color: rgba(255, 255, 255, 1);
