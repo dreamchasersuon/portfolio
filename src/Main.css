@@ -4,7 +4,6 @@
        url(fonts/Lato-Regular.ttf) format("ttf");
 }
 * { font-family: 'Roboto', sans-serif; }
-
 .InfoPanelBlock {
   display: flex;
   align-items: center;
@@ -20,9 +19,14 @@
   background-color: rgba(125, 120, 255, 1);
   max-width: 52vmin;
   color: rgba(255, 255, 255, 1);
-  padding: 1vmin;
+  padding: 2vmin;
   margin: 1vmin;
   border-radius: 1vmin;
+  text-indent: 1vmin;
+  text-justify: kashida;
+  line-height: 3vmin;
+  word-spacing: 1px;
+  text-align: justify;
   box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 }
 .ProfileModalWindow {
@@ -168,7 +172,7 @@
   .UsersMessage {
     min-width: 50vmin;
     min-height: 20vmin;
-    padding: 3vmin;
+    padding: 2vmin 5vmin 5vmin 2vmin;
     align-self: flex-end;
     text-shadow: none;
     border-radius: 4vmin;
