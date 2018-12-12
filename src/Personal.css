@@ -40,14 +40,12 @@
 .StatsBlockHeader {
   cursor: pointer;
   display: flex;
-    padding-bottom: 1vmin;
+  padding-bottom: 1vmin;
   margin-left: 2vmin;
   max-width: 16vmin;
   font-weight: 300;
   color: rgba(71, 41, 254, 0.8);
   font-size: 6vh;
-  border-bottom: 1px solid rgba(200, 200, 200, 1);
-  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .SpecialSectionHeader {
   cursor: pointer;
@@ -55,14 +53,6 @@
   font-weight: 300;
   color: rgba(71, 41, 254, 0.8);
   font-size: 4vh;
-  border-bottom: 1px solid rgba(200, 200, 200, 1);
-  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.SpecialSectionHeader:active {
-  border-bottom: 3px solid rgba(71, 41, 254, 0.8);
-}
-.SpecialSectionHeader:hover, .StatsBlockHeader:hover {
-  border-bottom: 3px solid rgba(71, 41, 254, 0.8);
 }
 .Specials-Skill {
   display: flex;

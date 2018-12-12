@@ -42,8 +42,7 @@ class ProgressLearnability extends React.Component {
     super(props);
 
     this.state = {
-      progress: 0,
-      percent: '',
+      progress: '',
       title: ''
     };
   }
@@ -54,10 +53,9 @@ class ProgressLearnability extends React.Component {
     const interval = setInterval(() => {
       this.setState(
         { progress: this.state.progress + p.pop(),
-          percent: this.state.progress + "%",
           title: this.state.title + t.pop()});
         clearInterval(interval);
-    }, 1000);
+    }, 1200);
   }
 
   render(props) {
@@ -68,7 +66,7 @@ class ProgressLearnability extends React.Component {
             radius={ 40 }
             stroke={ 2.5 }
             progress={ this.state.progress }
-            percent={ this.state.percent }
+            percent={ this.state.progress + '%' }
             />
           </div>
         <p>{ this.state.title }</p>

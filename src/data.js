@@ -1,7 +1,8 @@
-const dataPercents = ["91", "54", "82", "94", "97", "68", "78", "98", "90", "89",
-              "90", "40", "18",  "33", "23",  "33", "73"]
+const dataPercents = ["21", "67", "35", "20", "23", "88", "78", "45", "99",
+              "95", "89", "84",  "73", "77",  "98", "97"];
 
 const dataTitles = ["CLI", "DevTools", "Webpack", "React", "Git", "HTML", "CSS", "JS", "Stress resistance",
-              "Tenacity","Planning","Abstract thinking",  "Logic","Leadership",  "Responsibility", "Learnability"]
+              "Tenacity","Planning","Abstract thinking",  "Logic","Leadership",  "Responsibility", "Learnability"];
+
 
 export {dataTitles, dataPercents};
