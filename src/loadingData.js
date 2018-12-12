@@ -1,9 +1,5 @@
 import React from 'react';
-const dataPercents = ["53", "53%", "53%", "53%", "53%", "53%", "53%", "53%", "53%", "53%",
-              "53%","53%","53%",  "53%","53%",  "53%", "53"]
-
-const dataTitles = ["53", "53%", "53%", "53%", "53%", "53%", "53%", "53%", "53%", "53%",
-              "53%","53%","53%",  "53%","53%",  "5s%", "ls"]
+import {dataTitles, dataPercents} from './data.js';
 
 class ProgressSVG extends React.Component {
   constructor(props) {
@@ -60,7 +56,6 @@ class ProgressLearnability extends React.Component {
         { progress: this.state.progress + p.pop(),
           percent: this.state.progress + "%",
           title: this.state.title + t.pop()});
-      if (this.state.progress === p.pop())
         clearInterval(interval);
     }, 1000);
   }
