@@ -6,7 +6,7 @@ import SkillSection from './Progress.js';
 class Personal extends Component {
   render() {
     return (
-      <main className="About-MainGroup">
+      <main className="UsersStatBlock">
         <SkillSection />
       </main>
     )

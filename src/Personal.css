@@ -1,15 +1,15 @@
-.About-MainGroup {
+.UsersStatsBlock {
   display: flex;
   flex-grow: 1;
 }
-.Personal-Specials {
+.UsersStatsBlock_wrapper {
   display: flex;
   flex-flow: column;
   color: rgba(255, 255, 255, 1);
   width: 100%;
   height: 100vmin;
 }
-.SpecialsWrapper {
+.UsersSpecialsSection_wrapper {
   display: flex;
   flex-flow: row wrap;
   max-width: 60vmin;
@@ -18,7 +18,7 @@
   padding: 6vmin;
   align-items: center;
 }
-.SpecialsBlock {
+.UsersSpecialsSection {
   display: flex;
   align-self: center;
   flex-flow: row wrap;
@@ -27,10 +27,10 @@
   max-width: 70vmin;
   max-height: 100%;
 }
-.SpecialsBlock:hover {
+.UsersStatsBlock_wrapper:hover {
   overflow: scroll;
 }
-.BlockHeader {
+.StatsBlockHeader {
   display: flex;
   font-weight: 300;
   min-height: 7vmin;
@@ -39,7 +39,7 @@
   background-color: rgba(71, 41, 254, 0.8);
   font-size: 6vh;
 }
-.SliderHeader {
+.SpecialSectionHeader {
   max-height: 10vmin;
   min-width: 70vmin;
   margin-top: 1vmin;
@@ -81,13 +81,13 @@ circle {
 }
 
 @media screen and (max-width: 568px) {
-  .About-MainGroup {
-      background-color: rgba(71, 41, 254, 0.8);
+  .UsersStatsBlock {
+      background-color: rgba(255, 255, 255, 1);
   }
-  .Personal-Specials {
+  .UsersStatsBlock_wrapper {
     height: auto;
   }
-  .BlockHeader {
+  .StatsBlockHeader {
     padding: 1vmin 0 1vmin 1vmin;
     align-items: center;
     max-height: 8vmin;
@@ -97,7 +97,7 @@ circle {
     border-bottom-right-radius: 10vmin;
     background-color: rgba(125, 120, 255, 1);
   }
-  .SliderHeader {
+  .SpecialSectionHeader {
     text-shadow: none;
     font-size: 4vh;
     margin-top: 1vmin;
@@ -107,14 +107,14 @@ circle {
     border-bottom-right-radius: 10vmin;
     background-color: rgba(125, 120, 255, 1);
   }
-  .SpecialsBlock {
+  .UsersSpecialsSection {
     min-width: 100vmin;
     max-height: 100vmin;
     align-items: center;
     overflow: scroll;
     justify-content: space-between;
   }
-  .SpecialsWrapper {
+  .UsersSpecialsSection_wrapper {
     align-self: center;
     min-width: 80vmin;
     min-height: 100vmin;

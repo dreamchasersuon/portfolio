@@ -5,7 +5,7 @@
 }
 * { font-family: 'Roboto', sans-serif; }
 
-.MainGroup {
+.InfoPanelBlock {
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -15,7 +15,7 @@
   height: 100vmin;
   animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-.AboutSelf {
+.UsersMessage {
   display: flex;
   background-color: rgba(125, 120, 255, 1);
   max-width: 52vmin;
@@ -23,9 +23,9 @@
   padding: 1vmin;
   margin: 1vmin;
   border-radius: 1vmin;
-  box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 }
-.MainGroup-About_wrapper {
+.ProfileModalWindow {
   display: flex;
   align-items: center;
   align-self: center;
@@ -33,11 +33,11 @@
   max-height: 30vmin;
   justify-content: space-around;
   flex-flow: row-reverse;
-  box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
   background-color: rgba(125, 120, 255, 1);
   border-radius: 1vmin;
 }
-.MainGroup-Initials_wrapper {
+.UserDataBlock {
 	display: flex;
 	flex-flow: column;
 	align-self: center;
@@ -46,27 +46,27 @@
 	min-width: 35vmin;
   max-height: 25vmin;
 }
-.AboutGroup-Logos_wrapper {
+.UsersSocialLinks {
   display: flex;
   min-width: 15vmin;
   max-height: 10vmin;
   margin: 1vmin 0;
   flex-flow: row;
 }
-.AboutGroup-LogoFacebook {
+.LogoFacebook {
   background-image: url('fb.svg');
 }
-.AboutGroup-LogoVk {
+.LogoVk {
   background-image: url('vk.svg');
 }
-.AboutGroup-LogoGitHub {
+.LogoGitHub {
   background-image: url('gh.svg');
 }
 .SocialLink:hover {
   transform: scale(1.02);
   opacity: 0.5;
 }
-.AboutWrapper-Photo_wrapper {
+.UsersAvatar {
   display: flex;
   margin: 1vmin 1vmin;
   width: 15vmin;
@@ -79,17 +79,17 @@
   background-repeat: no-repeat;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-.MainGroup-Header, .MainGroup-Paragraph {
+.UsersInitials, .UsersJob {
   margin: 0 1vmin;
 	color: rgba(255, 255, 255, 1);
   cursor: default;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-.MainGroup-Paragraph {
+.UsersJob {
   font-weight: 500;
   font-size: 2vmin;
 }
-.MainGroup-Header {
+.UsersInitials {
 	font-size: 5vmin;
 }
 .SocialLink {
@@ -117,11 +117,11 @@
   body {
     font-family: Lato, sans-serif;
   }
-  .MainGroup {
+  .InfoPanelBlock {
     justify-content: space-between;
     flex-flow: column-reverse;
   }
-  .MainGroup-About_wrapper {
+  .ProfileModalWindow {
     min-width: 100vmin;
     min-height: 30vmin;
     border-top-right-radius: 4vmin;
@@ -129,28 +129,28 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .MainGroup-Header {
+  .UsersInitials {
     font-size: 5vh;
     align-self: flex-end;
     text-shadow: none;
   }
-  .MainGroup-Paragraph {
+  .UsersJob {
     font-size: 2.5vh;
     align-self: flex-end;
     text-shadow: none;
   }
-  .MainGroup-Initials_wrapper {
+  .UserDataBlock {
     min-width: 70vmin;
   }
-  .AboutGroup-Logos_wrapper {
+  .UsersSocialLinks {
     min-width: 30vmin;
     align-self: flex-end;
   }
-  .AboutWrapper-Photo_wrapper {
+  .UsersAvatar {
     min-width: 25vmin;
     min-height: 25vmin;
   }
-  .AboutSelf {
+  .UsersMessage {
     min-width: 50vmin;
     min-height: 20vmin;
     padding: 3vmin;
@@ -160,15 +160,10 @@
     border: 1px solid rgba(71, 41, 220, 0.8);
     letter-spacing: 1px;
   }
-  .AboutSelf:hover {
-    box-shadow: none;
-  }
   .SocialLink {
     width: 8vmin;
     height: 8vmin;
     box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
     border-radius: 50vmin;
   }
-
-
 }

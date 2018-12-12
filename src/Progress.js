@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class SkillSection extends Component {
   render() {
     return (
-      <article className="Personal-Specials">
-        <h2 className="BlockHeader">About</h2>
-          <section className="SpecialsBlock">
-          <h2 className="SliderHeader">Personal</h2>
-            <div className="SpecialsWrapper">
+      <article className="UsersStatsBlock_wrapper">
+        <h2 className="StatsBlockHeader">About</h2>
+          <section className="UsersSpecialsSection">
+          <h2 className="SpecialSectionHeader">Personal</h2>
+            <div className="UsersSpecialsSection_wrapper">
                 <SpecialLearn title="Learnability"/>
                   <SpecialRespons percent="90%" title="Responsibility" />
                     <SpecialLead percent="79%" title="Leadership" />
@@ -17,8 +17,8 @@ class SkillSection extends Component {
                     <SpecialTenacity percent="97%" title="Tenacity" />
                 <SpecialStress percent="91%" title="Stress resistance" />
             </div>
-          <h2 className="SliderHeader">Hacking</h2>
-          <div className="SpecialsWrapper">
+          <h2 className="SpecialSectionHeader">Hacking</h2>
+          <div className="UsersSpecialsSection_wrapper">
                 <SpecialJS percent="64%" title="JS" />
                   <SpecialCSS percent="67%" title="CSS" />
                     <SpecialHTML percent="89%" title="HTML" />
