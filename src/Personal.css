@@ -4,8 +4,6 @@
 }
 .Personal-Specials {
   display: flex;
-  align-self: flex-end;
-  justify-content: space-evenly;
   flex-flow: column;
   color: rgba(255, 255, 255, 1);
   width: 100%;
@@ -15,10 +13,9 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 60vmin;
-  max-height:80vmin;
-  margin-bottom: 10vmin;
+  max-height: 100vmin;
   align-self: center;
-  padding: 10vmin;
+  padding: 6vmin;
   align-items: center;
 }
 .SpecialsBlock {
@@ -28,36 +25,30 @@
   overflow: hidden;
   min-width: 60vmin;
   max-width: 70vmin;
-  max-height: 75vmin;
+  max-height: 100%;
 }
 .SpecialsBlock:hover {
   overflow: scroll;
 }
 .BlockHeader {
   display: flex;
+  font-weight: 300;
   min-height: 7vmin;
   max-height: 10vmin;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(71, 41, 254, 0.8);
-  animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
   font-size: 6vh;
-  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-}
-.BlockHeader:hover {
-  text-shadow: none;
 }
 .SliderHeader {
-  display: flex;
   max-height: 10vmin;
-  min-width: 60vmin;
+  min-width: 70vmin;
+  margin-top: 1vmin;
+  border-top-right-radius: 10vmin;
+  border-bottom-right-radius: 10vmin;
+  font-weight: 300;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(71, 41, 254, 0.8);
   font-size: 4vh;
-  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.SliderHeader:hover {
-  text-shadow: none;
 }
 .Specials-Skill {
   display: flex;
@@ -67,9 +58,9 @@
   max-height: 15vmin;
   margin: 1vmin 1vmin;
   border-radius: 2vmin;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
   background-color: rgba(71, 41, 254, 0.8);
-  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+  text-shadow: 0 0 1px rgba(151,24,64,0.2);
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .Specials-Skill:hover {
@@ -88,64 +79,40 @@ circle {
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 }
-.ScrollNavigation {
-  display: flex;
-  flex-flow: row;
-  align-self: center;
-  margin-right: 27vmin;
-}
-input, .NavLink {
-	position: fixed;
-	bottom: 0;
-	width: 10vmin;
-	cursor: pointer;
-	font-size: 3vh;
-	height: 5vmin;
-	line-height: 5vmin;
-}
-input {
-	opacity: 0;
-	z-index: 11;
-}
-.Up {
-  margin-right: 11vmin;
-}
-.Down {
-  margin-left: 11vmin;
-}
-.NavLink {
-	z-index: 10;
-	font-weight: 500;
-	background: rgba(180, 200, 250, 1);
-	color: #fff;
-  text-decoration: none;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-}
-
-.NavLink:hover {
-	background-color: rgba(180, 200, 250, 0.5);
-}
 
 @media screen and (max-width: 568px) {
+  .About-MainGroup {
+      background-color: rgba(71, 41, 254, 0.8);
+  }
   .Personal-Specials {
     height: auto;
   }
   .BlockHeader {
-    text-shadow: none;
-    padding: 1vmin 0;
+    padding: 1vmin 0 1vmin 1vmin;
+    align-items: center;
+    max-height: 8vmin;
+    font-weight: 300;
+    margin-top: 8vmin;
+    border-top-right-radius: 10vmin;
+    border-bottom-right-radius: 10vmin;
+    background-color: rgba(125, 120, 255, 1);
   }
   .SliderHeader {
     text-shadow: none;
-    font-size: 5vh;
+    font-size: 4vh;
+    margin-top: 1vmin;
+    padding: 0 0 0 1vmin;
+    font-weight: 300;
+    border-top-right-radius: 10vmin;
+    border-bottom-right-radius: 10vmin;
+    background-color: rgba(125, 120, 255, 1);
   }
   .SpecialsBlock {
     min-width: 100vmin;
-    min-height: 100vmin;
+    max-height: 100vmin;
     align-items: center;
     overflow: scroll;
     justify-content: space-between;
-    height: auto;
   }
   .SpecialsWrapper {
     align-self: center;
@@ -158,18 +125,5 @@ input {
     width: auto;
     padding-right: 2vmin;
     max-height: 30vmin;
-  }
-
-  .NavLink {
-    min-width: 15vmin;
-    min-height: 8vmin;
-    border-top-right-radius: 2vmin;
-    border-top-left-radius: 2vmin;
-  }
-  .Up {
-    right: 45vmin;
-  }
-  .Down {
-    right: 35vmin;
   }
 }

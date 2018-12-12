@@ -4,6 +4,7 @@
        url(fonts/Lato-Regular.ttf) format("ttf");
 }
 * { font-family: 'Roboto', sans-serif; }
+
 .MainGroup {
   display: flex;
   align-items: center;
@@ -23,11 +24,6 @@
   margin: 1vmin;
   border-radius: 1vmin;
   box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
-  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.AboutSelf:hover {
-  text-shadow: none;
 }
 .MainGroup-About_wrapper {
   display: flex;
@@ -87,7 +83,6 @@
   margin: 0 1vmin;
 	color: rgba(255, 255, 255, 1);
   cursor: default;
-  text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .MainGroup-Paragraph {
@@ -96,9 +91,6 @@
 }
 .MainGroup-Header {
 	font-size: 5vmin;
-}
-.MainGroup-Header:hover, .MainGroup-Paragraph:hover {
-  text-shadow: none;
 }
 .SocialLink {
   display: flex;
@@ -143,7 +135,7 @@
     text-shadow: none;
   }
   .MainGroup-Paragraph {
-    font-size: 3vh;
+    font-size: 2.5vh;
     align-self: flex-end;
     text-shadow: none;
   }
