@@ -10,9 +10,9 @@ class Main extends Component {
             <h1 className="UsersInitials">Tim Zdornov</h1>
             <p className="UsersJob">Front-end developer</p>
             <div className="UsersSocialLinks">
-              <a href="https://vk.com/lighttimfire" target="_blank" rel="noopener noreferrer" className="LogoVk SocialLink"></a>
-              <a href="https://github.com/dreamchasersuon" target="_blank" rel="noopener noreferrer" className="LogoGitHub SocialLink"></a>
-              <a href="https://www.facebook.com/formulatim" target="_blank" rel="noopener noreferrer" className="LogoFacebook SocialLink"></a>
+              <a href="https://vk.com/lighttimfire" target="_blank" rel="noopener noreferrer" className="LogoVk SocialLink">VK</a>
+              <a href="https://github.com/dreamchasersuon" target="_blank" rel="noopener noreferrer" className="LogoGitHub SocialLink">GH</a>
+              <a href="https://www.facebook.com/formulatim" target="_blank" rel="noopener noreferrer" className="LogoFacebook SocialLink">FB</a>
             </div>
           </section>
             <div className="UsersAvatar">
