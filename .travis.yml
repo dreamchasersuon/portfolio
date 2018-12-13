@@ -1,15 +1,18 @@
 language: node_js
 node_js:
-  - "node"
+- node
 cache:
-  - yarn
+- yarn
 install:
-  - yarn install
+- yarn install
 script:
-  - yarn build
+- yarn build
 deploy:
   provider: s3
   access_key_id: AKIAIX4EZQLMAEHQUC6A
   secret_access_key:
-    secure: 1yqtWdVO1vRd6ZYmBUxYYvddLqAvUkemhmJmMmS8je3SyH3SML9NDVEsRrzXbmMWjE67CrdQBFtZaxNQh3XiHerSjqgPifwIMbpABX/LFVeLpUDvxBl7lNp3EcLg4Qf3yRIf8u2BJbHjccrYgmnToao/SkJNpPtpJp0tiVPkva9ZDqVoU+8qkqPCPjaRW1m8HWQSk8D+4sE62WV/LmWOdcwREciRf58P3nLmUDVZQ/UgM6GLFo/VYLg/81tbdyHgcj113dM3K/gHlT6Ph1IeIaZBC7C0jr/INnXmTYSCWTluwo4c7Gi+OM7gMXiaHdM2j5vY8UnTze6E4UnXpnmSJ3FnnoJ3KbO1P7e9IksNE3R+YDBB/AyMCfJi+kVmY7myerBO2PkYJyquKbF0azAtkJttbe1qLvzOsp0zyknvMusvfCkDuUfVelEBu1MSGS5WTj1gtfbEBcad+UDkPMoLJPeVtwu0OW2KAlJf8Kfw5IY1lKlZ8/2nqY+rkGC4b6TfATWuBRmMIGc2nQlO8NKC31PQDinNEBDhbcZdl6kVafma0Jjos/pyrq9p9Rcm29jrnXw8I7BAuDpfqJLaZEJF1KIh2uPmvGkU62ImlNbDEQ+IP5DmzWoW2W15YeSqyQHHcWZrabLSFpAO3W6PPlR2XFSpQ7/MIDAuL39qUvllfq4=
-  bucket: "portfolio-tim"
+    secure: AWAckny7UQ6s9DKjqzWuCtE6a7YLgQtCDK9FgAHcmMHhgInkarrrjM8t9G4e8wSWWUb57wZQoTdyb4a0zo1MJUazUOqWUsz4fXstMZnGrBMhhu9JThqv60sJftG1qJvNews0qH/hwiuKP9W53lN5sCpIVQxVfiGgVFQax+o5F8FajL0XMrIyFeuR2JzAgCu4+UPW6ubuvPuEfIWpwBlwtoz9MqMx/3+lmyA5ZS9Fc0GA1HqyFvbKoDdR2q2ytQr9oeNpKBmZJIyNYLq7AwX5DTvbCw6V4yN2kf5E4McDEloCesTVBs8JRrbfbJg3WBFPd3CDYP2CCUFa0W1+K6ltRqcRB4Jj/q0pr8/pPk14Cs8roHDNNqBRNRrbaET2lMRVUfJ+p3UmGhy2hmRVy7l38xVcp5kSvy52NENh/8aAqnVJENiZ0GfLR5+NreTBtxNYkXtQP5D/FP33gcc6ykbqoaJxR5xmJrY7D8z09DPdSSEQgs5EmbtEQWboTDcmJWwX1bVjxyWWWDy5/cpko96x+w9WNfQkjbAgDsZ8QEA8aAvf/EqEfmLl9pG863P3jU0Zr2k/czMIv1LRmen6XIpH55NxrV7wxbEtQPyDj5bDkUybGpmsu2RxzQIgXICD8GmRED7wHAzheh1Dr/1bEK0ZLp1IgiwIiIRrDJB9+biRDY4=
+  bucket: portfolio-tim
+  acl: public_read_write
+  on:
+    repo: dreamchasersuon/portfolio
