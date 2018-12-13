@@ -1,13 +1,13 @@
 language: node.js
 node.js:
-- stable
+- "node"
 cache:
   directories:
   - node_modules
 script:
-- yarn install
-- yarn build
-- yarn deploy
+- npm run install
+- npm run build
+- npm run deploy
 deploy:
   provider: s3
   access_key_id: AKIAIX4EZQLMAEHQUC6A
