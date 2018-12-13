@@ -1,0 +1,222 @@
+@font-face {
+	font-family: 'Lato', 'Roboto';
+	src: url(fonts/Roboto-Regular.ttf) format("ttf"),
+       url(fonts/Lato-Regular.ttf) format("ttf");
+}
+* { font-family: 'Roboto', sans-serif; }
+.InfoPanelBlock {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  font-weight: 300;
+  justify-content: center;
+  min-width: 100vmin;
+  height: 100vmin;
+  animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.UsersMessage {
+  display: flex;
+  background-color: rgba(125, 120, 254, 1);
+  max-width: 52vmin;
+  color: rgba(255, 255, 255, 1);
+  padding: 2vmin;
+  margin: 1vmin;
+  border-radius: 1vmin;
+  line-height: 3vmin;
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+.ProfileModalWindow {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  min-width: 52vmin;
+  max-height: 30vmin;
+  justify-content: space-around;
+  flex-flow: row-reverse;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  background-color: rgba(125, 120, 255, 1);
+  border-radius: 1vmin;
+  -webkit-animation-duration:3s;
+	animation-duration:3s;
+	-webkit-animation-name:slidein;
+	animation-name:slidein;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.UserDataBlock {
+	display: flex;
+	flex-flow: column;
+	align-self: center;
+  justify-content: space-around;
+  margin: 1vmin 1vmin;
+	min-width: 35vmin;
+  max-height: 25vmin;
+}
+.UsersSocialLinks {
+  display: flex;
+  min-width: 15vmin;
+  max-height: 10vmin;
+  margin: 1vmin 0;
+  flex-flow: row;
+}
+.LogoFacebook {
+  background-image: url('fb.svg');
+}
+.LogoVk {
+  background-image: url('vk.svg');
+}
+.LogoGitHub {
+  background-image: url('gh.svg');
+}
+.SocialLink:hover {
+  transform: scale(1.02);
+  opacity: 0.5;
+}
+.UsersAvatar {
+  display: flex;
+  margin: 1vmin 1vmin;
+  width: 15vmin;
+  height: 15vmin;
+  align-self: center;
+  border-radius: 50px;
+  background-color: rgba(200, 120, 255, 0.8);
+  background-size: cover;
+  background-image: url("me.png");
+  background-repeat: no-repeat;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.UsersInitials, .UsersJob {
+  margin: 0 1vmin;
+	color: rgba(255, 255, 255, 1);
+  cursor: default;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.UsersJob {
+  font-weight: 500;
+  font-size: 2vmin;
+}
+.UsersInitials {
+	font-size: 5vmin;
+}
+.SocialLink {
+  display: flex;
+  width: 5vmin;
+  height: 5vmin;
+  margin: 0 1vmin;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@-webkit-keyframes slidein
+{
+	from {
+    margin-top:10%;
+	  width:90vmin;
+  }
+	to  {
+    margin-top:0%;
+	  width:53vmin;
+  }
+}
+@keyframes color {
+  0% {
+    background-color: rgba(71, 41, 254, 0.8);
+  }
+  50% {
+    background-color: rgba(50, 30, 220, 0.8);
+  }
+  100% {
+    background-color: rgba(71, 41, 254, 0.8);
+  }
+}
+@media screen and (max-width: 1168px) {
+  .InfoPanelBlock {
+    min-width: 100%;
+  }
+  .ProfileModalWindow {
+    min-width: 70vmin;
+    min-height: 30vmin;
+  }
+  .UsersInitials {
+    font-size: 6vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .UsersJob {
+    font-size: 2.5vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .UserDataBlock {
+    min-width: 30vmin;
+  }
+  .UsersSocialLinks {
+    min-width: 20vmin;
+    align-self: flex-end;
+  }
+  .UsersAvatar {
+    min-width: 18vmin;
+    min-height: 18vmin;
+  }
+  .SocialLink {
+    width: 7vmin;
+    height: 7vmin;
+    box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
+    border-radius: 50vmin;
+  }
+}
+@media screen and (max-width: 568px) {
+  body {
+    font-family: Lato, sans-serif;
+  }
+  .InfoPanelBlock {
+    justify-content: space-between;
+    flex-flow: column-reverse;
+  }
+  .ProfileModalWindow {
+    min-width: 100vmin;
+    min-height: 30vmin;
+    border-top-right-radius: 4vmin;
+    border-top-left-radius: 4vmin;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .UsersInitials {
+    font-size: 5vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .UsersJob {
+    font-size: 2.5vh;
+    align-self: flex-end;
+    text-shadow: none;
+  }
+  .UserDataBlock {
+    min-width: 70vmin;
+  }
+  .UsersSocialLinks {
+    min-width: 30vmin;
+    align-self: flex-end;
+  }
+  .UsersAvatar {
+    min-width: 25vmin;
+    min-height: 25vmin;
+  }
+  .UsersMessage {
+    min-width: 50vmin;
+    min-height: 20vmin;
+    padding: 2vmin 5vmin 5vmin 2vmin;
+    align-self: flex-end;
+    text-shadow: none;
+    border-radius: 4vmin;
+    border: 1px solid rgba(71, 41, 220, 0.8);
+    line-height: 5vmin;
+    word-spacing: 0;
+  }
+  .SocialLink {
+    width: 8vmin;
+    height: 8vmin;
+    box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
+    border-radius: 50vmin;
+  }
+}
