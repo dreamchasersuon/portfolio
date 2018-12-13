@@ -56,7 +56,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "deploy": "aws s3 sync build/ s3://portfolio-tim"
   },
   "eslintConfig": {
     "extends": "react-app"
