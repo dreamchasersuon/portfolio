@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ProgressLearnability from './loadingData.js'
 
-
 class SkillSection extends Component {
   render() {
     return (
