@@ -16,7 +16,7 @@
 }
 .UsersMessage {
   display: flex;
-  background-color: rgba(125, 120, 255, 1);
+  background-color: rgba(125, 120, 254, 1);
   max-width: 52vmin;
   color: rgba(255, 255, 255, 1);
   padding: 2vmin;
