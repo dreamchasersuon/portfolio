@@ -8,9 +8,9 @@ install:
 script:
 - yarn build
 deploy:
-  provider: s3
-  access_key_id: AWS_ACCESS_KEY
-  secret_access_key: AWS_SECRET_ACCESS_KEY
-  bucket: portfolio-tim
-  acl: public_read
-  region: us-east-1
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
