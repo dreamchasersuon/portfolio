@@ -9,9 +9,8 @@ script:
 - yarn build
 deploy:
   provider: s3
-  access_key_id: AKIAIJHIVPNABROE56QA
-  secret_access_key:
-    secure: tt7W5dOo3WLF20YBim+pDizBlU4wKo5RVF9sfDZDMIyfmJ3t4YJq8uxasOB5KcF6/HYSIhgFBx8ga1O7OxNbNJ88Td9o9GJrX5eChHY28fBUE1ZKauD6qwubT+ZOvXCKiqrEg8rctT6G4zM6Msq1vESQrzOkqEiKkTt6j2yKPETgD/u9MQIVEkdqPNdUf/las0X/jjO4xJpbRT+lkrNYp46zfeWqRlKLEvJmbNhJDpajZk6+Imq1Mm0MsY0TcxZv0cgklUhVZL2KH3iIXdPizpUsStihPsKhCo3Yuum8zQUSrb8rnJD0sClv/g2VRrGFchaiG1h2IWtghSyQBDNw6zIb/wpc5CT0YQHj/UWEQZWDy57RVi6jHz5t3RMozJJLQ/G/InEBZ7vMcEqU5P2QkWem/8ippN2JqvYZBkgOvEGsS+oBH6uOKh+fsAiew5qOzApgO3LfemAbeTCG+IH0QTq3lNkwnMV9/fjEwGQbfpIpSJITHTYSMX7YRMMlSlXjj41DWJK+x3sxQFf8HhnB4uX/Db1034KD0WSP7jQhHz6v8n2kdSP6Kk807hiv54F9JdJNXMVrPlK7Q3ng0Em3avsmYh6ylWnG9SYvxLP+azn/8lcVKI0ZDpvt+fgtOIsbEhMkeDBrofCIUPVlo2JYSTtQ92w+TGa/EVCypROhECQ=
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: portfolio-tim
   acl: public_read
   region: us-east-1
