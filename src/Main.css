@@ -103,8 +103,10 @@
   width: 5vmin;
   height: 5vmin;
   margin: 0 1vmin;
+  color: rgba(125, 120, 254, 1);
   background-repeat: no-repeat;
   background-size: contain;
+  font-size: 1px;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 @-webkit-keyframes slidein
