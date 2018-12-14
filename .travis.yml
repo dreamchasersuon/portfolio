@@ -9,8 +9,10 @@ script:
 - yarn build
 deploy:
   provider: s3
+  script: ~/.local/bin/aws s3 sync build/ s3://portfolio-tim --region=us-east-2 --delete
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: "portfolio-tim"
   acl: public_read
-  region: us-east-2
+  skip_cleanup: true
+  on:
+    branch: master
