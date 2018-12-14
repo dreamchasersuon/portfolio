@@ -1,14 +1,17 @@
+sudo: required
+addons:
+  chrome: stable
 language: node_js
 node_js:
-- node
-cache:
-- yarn
-install:
-- yarn install
+  - "10.0"
+branches:
+  only:
+    - master
 script:
-- yarn build
+  - yarn install
+  - yarn build
 deploy:
+  skip_cleanup: true
   provider: firebase
   token:
-    secure: M3HSmdOPLUC5zdDjZWRPHmUXscsV5t8/nyr5p5wSMcQujXg143qmWePzFFaTcLnt4kltOdgcA/pCme10NNrVNeGDIaZL1vqZ8S4aHBqauhRI07qG96vMMnvFfwP2AiqXNZOq1bhnCk2toPkimZF+9L2D+MwQddF3Qy9TArUlTlTOi7GxoToL4EcmGHIFOjMv6YbMKY4F4mUrkkOKIyiKtw/eyfkn/XthqTh/sknKXgv7m+OQaVqR/0u2sByjG6lLAcyQl2Axb62WNOnk6pZHasJiRiklQ2mOeLbVrjGYKHKe/69eQJ1l0aA0NopIzo7Qxi6OMpW/kp0qkxuCXtXg0JTAxmnfNcBN7YgYRhgfw5H1e3vmffwzxLmdHqKb9hPVH5b408sVKjiEKVRAIna3AlPCLEEpeDC3VDpU3b9GjFRj4odrLCfDpQLVv/LQRLPBwsUAvyyc5ONf6+UCbYmZwmpUhWsJNgSirIGndmrLOVfc51blpTiC87D6Rf2YtbyADqavQ91Vp/mAt2BXJOLYGDZnjPAwLbAEtKieyTyYucWzYJ6LtdWY84zaPTZ8sQwW7wkodqg5mmRvaMz3vn2q8xC8TeYt/ry1W5jCNl0Q3XrOCRwP7bcTUEbXWJFpew/jspqocUydnrdHvTHYq8ldJbKD3pl6VmULK5ibUNAugsc=
-  message: "Happy dancing"
+    secure: $FIREBASE_TOKEN
