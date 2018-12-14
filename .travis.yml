@@ -13,4 +13,4 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: portfolio-tim
   acl: public_read
-  region: us-east-1
+  region: us-east-2
