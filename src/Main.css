@@ -10,7 +10,7 @@
   flex-flow: column;
   font-weight: 300;
   justify-content: center;
-  min-width: 100vmin;
+  width: 50%;
   height: 100vmin;
   animation: color 10s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }

@@ -1,6 +1,7 @@
 .UsersStatsBlock {
   display: flex;
   flex-grow: 1;
+  width: 50%;
 }
 .UsersStatsBlock_wrapper {
   display: flex;
