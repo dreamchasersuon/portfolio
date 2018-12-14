@@ -8,7 +8,7 @@ class Main extends Component {
         <article className="ProfileModalWindow">
           <section className="UserDataBlock">
             <h1 className="UsersInitials">Tim Zdornov</h1>
-            <p className="UsersJob">Front-end developer</p>
+            <p className="UsersJob">Frot-end develope</p>
             <div className="UsersSocialLinks">
               <a href="https://vk.com/lighttimfire" target="_blank" rel="noopener noreferrer" className="LogoVk SocialLink">VK</a>
               <a href="https://github.com/dreamchasersuon" target="_blank" rel="noopener noreferrer" className="LogoGitHub SocialLink">GH</a>

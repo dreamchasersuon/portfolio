@@ -7,13 +7,8 @@ install:
 - yarn install
 script:
 - yarn build
-before_deploy: pip install --user awscli
 deploy:
-  provider: script
-  script: ~/.local/bin/aws s3 sync build/ s3://portfolio-tim --region=us-east-2 --delete
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  acl: public_read
-  skip_cleanup: true
-  on:
-    branch: master
+  provider: firebase
+  token:
+    secure: M3HSmdOPLUC5zdDjZWRPHmUXscsV5t8/nyr5p5wSMcQujXg143qmWePzFFaTcLnt4kltOdgcA/pCme10NNrVNeGDIaZL1vqZ8S4aHBqauhRI07qG96vMMnvFfwP2AiqXNZOq1bhnCk2toPkimZF+9L2D+MwQddF3Qy9TArUlTlTOi7GxoToL4EcmGHIFOjMv6YbMKY4F4mUrkkOKIyiKtw/eyfkn/XthqTh/sknKXgv7m+OQaVqR/0u2sByjG6lLAcyQl2Axb62WNOnk6pZHasJiRiklQ2mOeLbVrjGYKHKe/69eQJ1l0aA0NopIzo7Qxi6OMpW/kp0qkxuCXtXg0JTAxmnfNcBN7YgYRhgfw5H1e3vmffwzxLmdHqKb9hPVH5b408sVKjiEKVRAIna3AlPCLEEpeDC3VDpU3b9GjFRj4odrLCfDpQLVv/LQRLPBwsUAvyyc5ONf6+UCbYmZwmpUhWsJNgSirIGndmrLOVfc51blpTiC87D6Rf2YtbyADqavQ91Vp/mAt2BXJOLYGDZnjPAwLbAEtKieyTyYucWzYJ6LtdWY84zaPTZ8sQwW7wkodqg5mmRvaMz3vn2q8xC8TeYt/ry1W5jCNl0Q3XrOCRwP7bcTUEbXWJFpew/jspqocUydnrdHvTHYq8ldJbKD3pl6VmULK5ibUNAugsc=
+  message: "Happy dancing"
