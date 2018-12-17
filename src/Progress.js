@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ProgressLearnability from './loadingData.js'
+import ProgressLearnability from './loadingData.js';
+import './Progress.css';
 
 class SkillSection extends Component {
   render() {

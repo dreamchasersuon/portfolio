@@ -81,7 +81,7 @@
   border-radius: 50px;
   background-color: rgba(200, 120, 255, 0.8);
   background-size: cover;
-  background-image: url("me.png");
+  background-image: url("me.jpg");
   background-repeat: no-repeat;
   transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -142,12 +142,10 @@
   .UsersInitials {
     font-size: 6vh;
     align-self: flex-end;
-    text-shadow: none;
   }
   .UsersJob {
     font-size: 2.5vh;
     align-self: flex-end;
-    text-shadow: none;
   }
   .UserDataBlock {
     min-width: 30vmin;
@@ -168,9 +166,6 @@
   }
 }
 @media screen and (max-width: 568px) {
-  body {
-    font-family: Lato, sans-serif;
-  }
   .InfoPanelBlock {
     justify-content: space-between;
     flex-flow: column-reverse;
@@ -186,12 +181,10 @@
   .UsersInitials {
     font-size: 5vh;
     align-self: flex-end;
-    text-shadow: none;
   }
   .UsersJob {
     font-size: 2.5vh;
     align-self: flex-end;
-    text-shadow: none;
   }
   .UserDataBlock {
     min-width: 70vmin;
@@ -209,7 +202,6 @@
     min-height: 20vmin;
     padding: 2vmin 5vmin 5vmin 2vmin;
     align-self: flex-end;
-    text-shadow: none;
     border-radius: 4vmin;
     border: 1px solid rgba(71, 41, 220, 0.8);
     line-height: 5vmin;
@@ -218,6 +210,53 @@
   .SocialLink {
     width: 8vmin;
     height: 8vmin;
+    box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
+    border-radius: 50vmin;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.InfoPanelBlock {
+    justify-content: space-evenly;
+    flex-flow: column-reverse;
+  }
+	.ProfileModalWindow {
+    min-width: 80vmin;
+    min-height: 40vmin;
+    border-radius: 4vmin;
+  }
+	.UsersInitials {
+    font-size: 10vh;
+    align-self: flex-end;
+  }
+	.UsersJob {
+    font-size: 5vh;
+    align-self: flex-end;
+  }
+	.UserDataBlock {
+    min-width: 80vmin;
+  }
+	.UsersSocialLinks {
+    min-width: 30vmin;
+    align-self: flex-end;
+  }
+	.UsersAvatar {
+    min-width: 30vmin;
+    min-height: 30vmin;
+  }
+	.UsersMessage {
+    min-width: 60vmin;
+    min-height: 30vmin;
+    padding: 2vmin 5vmin 5vmin 2vmin;
+    align-self: center;
+    border-radius: 4vmin;
+    border: 1px solid rgba(71, 41, 220, 0.8);
+    line-height: 5vmin;
+    word-spacing: 0;
+  }
+	.SocialLink {
+    width: 10vmin;
+    height: 10vmin;
     box-shadow: 0 0 1vmin rgba(0, 0, 0, .2);
     border-radius: 50vmin;
   }
